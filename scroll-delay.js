@@ -3,11 +3,11 @@ $(document).ready(function() {
  
 	$.fn.scrolled = function(callback, delay){
 		var timer = null;
-        var delay = delay || 1000;
+                var delay = delay || 1000;
 		this.scroll(function(){
 			if (timer){ clearTimeout(timer);}
 			timer = setTimeout(function(){
-      		callback.call()}, delay);
+      		          callback.call()}, delay);
 		});
 	} 
   
