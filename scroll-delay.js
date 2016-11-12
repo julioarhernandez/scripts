@@ -7,7 +7,7 @@ $(document).ready(function() {
 		this.scroll(function(){
 			if (timer){ clearTimeout(timer);}
 			timer = setTimeout(function(){
-      callback.call()}, delay);
+      		callback.call()}, delay);
 		});
 	} 
   
@@ -17,4 +17,4 @@ $(document).ready(function() {
   
   $(window).scrolled(doSomething);
  
-}); // ready() END
+});
